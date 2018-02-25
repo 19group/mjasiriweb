@@ -24,7 +24,7 @@ a:focus {
 .tm-color-primary {	color: #ee5057; }
 .tm-bg-primary { background: #ee5057; }
 .tm-bg-gray { background: #F4F4F4; }
-.tm-bg-white { background: #FBDFC3; }
+/*.tm-bg-white { background: #FBDFC3; }*/
 .tm-bg-dark-blue { background: #1f3646; }
 
 .tm-bg-white-shadow {
@@ -260,7 +260,7 @@ select.tm-select::-ms-expand { display: none; }
 }
 
 .tm-section-subtitle {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-weight: 300;
 	margin-bottom: 25px;
 }
@@ -566,4 +566,9 @@ video {
 		max-width: 530px;
 		width: 100%;
 	}
+}
+
+.top-subtitle
+{
+	color: #B3A394;
 }
