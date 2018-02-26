@@ -7,7 +7,7 @@ body {
 	background-color: #FBDFC3;
 }
 
-a, button { transition: all 0.3s ease; }
+a, button { transition: all 0.3s ease; color:#E47735; }
 a:hover,
 a:focus {
 	text-decoration: none;
@@ -21,8 +21,8 @@ a:focus {
 .tm-margin-b-20 { margin-bottom: 20px; }
 .tm-p-4 { padding: 2rem!important; }
 .tm-color-white { color: white; }
-.tm-color-primary {	color: #ee5057; }
-.tm-bg-primary { background: #ee5057; }
+.tm-color-primary {	color: #E47735; }
+.tm-bg-primary { background: #E47735; }
 .tm-bg-gray { background: #F4F4F4; }
 /*.tm-bg-white { background: #FBDFC3; }*/
 .tm-bg-dark-blue { background: #1f3646; }
@@ -90,7 +90,7 @@ p {
 .nav-link.active,
 .nav-link:hover {
 	color: white;
-	background: #ee5057;
+	background: #E47735;
 }
 
 .tm-top-bar .navbar-expand-lg .navbar-nav .nav-link { padding: 30px 35px; }
@@ -164,13 +164,13 @@ p {
 }
 
 .form-control:focus {
-	border-color: #ee5057;
+	border-color: #E47735;
 	box-shadow: 0 0 0 0.2rem rgba(238,80,87,.25);
 }
 
 .btn-primary {
-	background-color: #ee5057;
-	border-color: #ee5057;
+	background-color: #E47735;
+	border-color: #E47735;
 	border-radius: 0;
 	cursor: pointer;
 	font-size: 0.7rem;
@@ -191,7 +191,7 @@ p {
 .tm-form-element:last-child { margin-right: 0; }
 
 .tm-form-element-icon {
-	color: #ee5057;
+	color: #E47735;
 	position: absolute;
 	top: 10px;
 	left: 15px;
@@ -244,7 +244,7 @@ select.tm-select::-ms-expand { display: none; }
 .tm-pb-4 { padding-bottom: 100px; }
 
 .tm-section-2 {
-	background: #ee5057;
+	background: #E47735;
 	padding-top: 50px;
 	position: relative;
 }
@@ -277,7 +277,7 @@ select.tm-select::-ms-expand { display: none; }
 
 .tm-btn-white-bordered:hover,
 .tm-btn-white-bordered:focus {
-	color: #ee5057;
+	color: #E47735;
 	background: white;
 }
 
@@ -337,7 +337,7 @@ select.tm-select::-ms-expand { display: none; }
 	transition: all 0.3s ease;
 }
 
-.tm-recommended-item:hover h4 { color: #ee5057; }
+.tm-recommended-item:hover h4 { color: #E47735; }
 .tm-media { align-items: stretch; }
 
 .tm-media,
@@ -484,8 +484,11 @@ video {
 	}
 
 	#tm-section-1 {
+		/*
 		padding-left: 15px;
 		padding-right: 15px;
+		*/
+		height: inherit;
 	}
 
 	.tm-media-container,
@@ -523,6 +526,10 @@ video {
 		max-width: none;
 	}
 
+.row.countdown {
+    margin-bottom: 25px;
+}
+
 	.tm-search-form .tm-form-element-50 { width: 50%; }
 }
 
@@ -534,9 +541,13 @@ video {
 		max-width: 100%;
 	}
 
+.row.countdown {
+    margin-bottom: 25px;
+}
+
 	.tm-fx-col-xs { flex-direction: column; }
 	.tm-section-pad { padding: 25px 15px; }
-	#tm-section-1 { height: 600px; }
+	#tm-section-1 { height: inherit; }
 }
 
 /* IE Fixes */
