@@ -1,558 +1,626 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Mjasiri </title>
+ <title>Mjasiri </title>
 
-    <!-- load stylesheets -->
-    <!--<link rel="stylesheet" async href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/demo.css">
+ <!-- load stylesheets -->
+ <!--<link rel="stylesheet" async href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
+ <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+ <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+ <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+ <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+ <link rel="stylesheet" href="css/main.css">
+ <link rel="stylesheet" type="text/css" href="css/demo.css">
 
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-          <![endif]-->
+ <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+ <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+ <!--[if lt IE 9]>
+ <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+ <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+ <![endif]-->
 </head>
 
-    <body>
-        <div class="tm-main-content" id="top">
-            <div class="tm-top-bar-bg"></div>
-            <div class="tm-top-bar" id="tm-top-bar">
-                <!-- Top Navbar -->
-                <div class="container">
-                    <div class="row">
-
-                        <nav class="navbar navbar-expand-lg narbar-light">
-                            <a class="navbar-brand mr-auto" href="#">
-                                <img src="img/mjasirixs.png" alt="Site logo">
-                            </a>
-                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
-                                <ul class="navbar-nav ml-auto">
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-2">About Us</a>
-                                  </li>
-                                  <!--
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-5">Blog Entries</a>
-                                  </li>
-                                  -->
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-6">Contact Us</a>
-                                  </li>
-
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <div class="tm-section tm-bg-img" id="tm-section-1">
-                <div class="tm-bg-white ie-container-width-fix-2">
-                    <div class="container ie-h-align-center-fix">
-
-                     <div class="row theme-container">
-                         <div class="col text-center">
-                             <h1 class="tm-section-title">Theme: Dear Future Generation</h1>
-                             <h2 class="tm-section-subtitle top-subtitle">Celebrating Women | Environment | Defying Barries </h2>
-                             <p class="tm-color-white tm-section-subtitle">Date: 7th April 2018</p>
-                         </div>
-                     </div>
-                        <div class="row">
-                            <div class="col-xs-12 ml-auto mr-auto ie-container-width-fix">
-
-                                    <div class="form-row tm-search-form-row">
-
-                                     <div class=" countdown countdown-container container">
-                                         <div class="clock row">
-                                             <div class="clock-item clock-days countdown-time-value col-xs-3 col-sm-3 col-md-3">
-                                                 <div class="wrap">
-                                                     <div class="inner">
-                                                         <div id="canvas-days" class="clock-canvas"></div>
-
-                                                         <div class="text">
-                                                             <p class="val">0</p>
-                                                             <p class="type-days type-time">DAYS</p>
-                                                         </div><!-- /.text -->
-                                                     </div><!-- /.inner -->
-                                                 </div><!-- /.wrap -->
-                                             </div><!-- /.clock-item -->
-
-                                             <div class="clock-item clock-hours countdown-time-value col-xs-3 col-sm-3 col-md-3">
-                                                 <div class="wrap">
-                                                     <div class="inner">
-                                                         <div id="canvas-hours" class="clock-canvas"></div>
-
-                                                         <div class="text">
-                                                             <p class="val">0</p>
-                                                             <p class="type-hours type-time">HOURS</p>
-                                                         </div><!-- /.text -->
-                                                     </div><!-- /.inner -->
-                                                 </div><!-- /.wrap -->
-                                             </div><!-- /.clock-item -->
-
-                                             <div class="clock-item clock-minutes countdown-time-value col-xs-3 col-sm-3 col-md-3">
-                                                 <div class="wrap">
-                                                     <div class="inner">
-                                                         <div id="canvas-minutes" class="clock-canvas"></div>
-
-                                                         <div class="text">
-                                                             <p class="val">0</p>
-                                                             <p class="type-minutes type-time">MINUTES</p>
-                                                         </div><!-- /.text -->
-                                                     </div><!-- /.inner -->
-                                                 </div><!-- /.wrap -->
-                                             </div><!-- /.clock-item -->
-
-                                             <div class="clock-item clock-seconds countdown-time-value col-xs-3 col-sm-3 col-md-3">
-                                                 <div class="wrap">
-                                                     <div class="inner">
-                                                         <div id="canvas-seconds" class="clock-canvas"></div>
-
-                                                         <div class="text">
-                                                             <p class="val">0</p>
-                                                             <p class="type-seconds type-time">SECONDS</p>
-                                                         </div><!-- /.text -->
-                                                     </div><!-- /.inner -->
-                                                 </div><!-- /.wrap -->
-                                             </div><!-- /.clock-item -->
-                                         </div><!-- /.clock -->
-                                     </div><!-- /.countdown-wrapper -->
-
-                                    </div>
-
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="tm-section-2" id="tm-section-2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col text-center">
-                            <h2 class="tm-section-title">Telling Africa's Stories</h2>
-                            <p class="tm-color-white tm-section-subtitle">Want to Join Us? Subscribe below</p>
-                            <a href="#" class="tm-color-white tm-btn-white-bordered">Subscribe here</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tm-section tm-position-relative">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="tm-section-down-arrow">
-                    <polygon fill="#E47735" points="0,0  100,0  50,60"></polygon>
-                </svg>
-                <div class="container tm-pb-4">
-                    <div class="row ">
-                        <article class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
-                            <h3 class="tm-color-primary tm-article-title-1">About Mjasiri <i class="fa fa-cog tm-color-primary tm-margin-b-20"></i></h3>
-                            <p class="about">Mjasiri is a platform for sharing inspiring local stories. </p>
-                            <p class="about">The platform is  aimed at identifying inspiring local stories and providing them with an avenue to be heard, with the aim of inspiring people to think different and initiate action, especially changes at the local level.</p>
-                            <p class="about">The stories will all be recorded for expansion of viewership aimed at sharing such stories to the widest audience possible and targeting TV and social platforms.</p>
-                        </article>
-                        <article class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-left">
-
-                            <h3 class="tm-color-primary tm-article-title-1"><i class="fa fa-cogs tm-color-primary tm-margin-b-20"></i> The creative approach</h3>
-                            <p class="about">The platform is designed with one principle in mind</p>
-                            <p class="about tm-font-semibold tm-font-italic">“Allow people to have a holistic storytelling experience, that takes into account different ways that people consume content” </p>
-                            <p class="about">Thus Mjasiri Platform will include stories, dramas, presentations, exhibitions, talks, poems, music etc </p>
-
-                            <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Join Us Now.</a>
-                        </article>
-                    </div>
-                </div>
-            </div>
-            <!--
-
-            <div class="tm-section tm-section-pad tm-bg-gray" id="tm-section-4">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
-                            <div class="tm-article-carousel">
-                                <article class="tm-bg-white mr-2 tm-carousel-item">
-                                    <img src="img/img-01.jpg" alt="Image" class="img-fluid">
-                                    <div class="tm-article-pad">
-                                        <header><h3 class="text-uppercase tm-article-title-2">Nunc in felis aliquet metus luctus iaculis</h3></header>
-                                        <p>Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla. Nullam sollicitudin at augue venenatis eleifend. Nulla ligula ligula, egestas sit amet viverra id, iaculis sit amet ligula.</p>
-                                        <a href="#" class="text-uppercase btn-primary tm-btn-primary">Get More Info.</a>
-                                    </div>
-                                </article>
-                                <article class="tm-bg-white mr-2 tm-carousel-item">
-                                    <img src="img/img-02.jpg" alt="Image" class="img-fluid">
-                                    <div class="tm-article-pad">
-                                        <header><h3 class="text-uppercase tm-article-title-2">Sed cursus dictum nunc quis molestie</h3></header>
-                                        <p>Pellentesque quis dui sit amet purus scelerisque eleifend sed ut eros. Morbi viverra blandit massa in varius. Sed nec ex eu ex tincidunt iaculis. Curabitur eget turpis gravida.</p>
-                                        <a href="#" class="text-uppercase btn-primary tm-btn-primary">View Detail</a>
-                                    </div>
-                                </article>
-                                <article class="tm-bg-white mr-2 tm-carousel-item">
-                                    <img src="img/img-01.jpg" alt="Image" class="img-fluid">
-                                    <div class="tm-article-pad">
-                                        <header><h3 class="text-uppercase tm-article-title-2">Eget diam pellentesque interdum ut porta</h3></header>
-                                        <p>Aenean finibus tempor nulla, et maximus nibh dapibus ac. Duis consequat sed sapien venenatis consequat. Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla.</p>
-                                        <a href="#" class="text-uppercase btn-primary tm-btn-primary">More Info.</a>
-                                    </div>
-                                </article>
-                                <article class="tm-bg-white mr-2 tm-carousel-item">
-                                    <img src="img/img-02.jpg" alt="Image" class="img-fluid">
-                                    <div class="tm-article-pad">
-                                        <header><h3 class="text-uppercase tm-article-title-2">Lorem ipsum dolor sit amet, consectetur</h3></header>
-                                        <p>Suspendisse molestie sed dui eget faucibus. Duis accumsan sagittis tortor in ultrices. Praesent tortor ante, fringilla ac nibh porttitor, fermentum commodo nulla.</p>
-                                        <a href="#" class="text-uppercase btn-primary tm-btn-primary">Detail Info.</a>
-                                    </div>
-                                </article>
-                                <article class="tm-bg-white mr-2 tm-carousel-item">
-                                    <img src="img/img-01.jpg" alt="Image" class="img-fluid">
-                                    <div class="tm-article-pad">
-                                        <header><h3 class="text-uppercase tm-article-title-2">Orci varius natoque penatibus et</h3></header>
-                                        <p>Pellentesque quis dui sit amet purus scelerisque eleifend sed ut eros. Morbi viverra blandit massa in varius. Sed nec ex eu ex tincidunt iaculis. Curabitur eget turpis gravida.</p>
-                                        <a href="#" class="text-uppercase btn-primary tm-btn-primary">Read More</a>
-                                    </div>
-                                </article>
-                                <article class="tm-bg-white tm-carousel-item">
-                                    <img src="img/img-02.jpg" alt="Image" class="img-fluid">
-                                    <div class="tm-article-pad">
-                                        <header><h3 class="text-uppercase tm-article-title-2">Nullam sollicitudin at augue venenatis eleifend</h3></header>
-                                        <p>Aenean finibus tempor nulla, et maximus nibh dapibus ac. Duis consequat sed sapien venenatis consequat. Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla.</p>
-                                        <a href="#" class="text-uppercase btn-primary tm-btn-primary">More Details</a>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-recommended-container">
-                            <div class="tm-bg-white">
-                                <div class="tm-bg-primary tm-sidebar-pad">
-                                    <h3 class="tm-color-white tm-sidebar-title">Recommended Places</h3>
-                                    <p class="tm-color-white tm-margin-b-0 tm-font-light">Enamel pin cliche tilde, kitsch and VHS thundercats</p>
-                                </div>
-                                <div class="tm-sidebar-pad-2">
-                                    <a href="#" class="media tm-media tm-recommended-item">
-                                        <img src="img/tn-img-01.jpg" alt="Image">
-                                        <div class="media-body tm-media-body tm-bg-gray">
-                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Europe</h4>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="media tm-media tm-recommended-item">
-                                        <img src="img/tn-img-02.jpg" alt="Image">
-                                        <div class="media-body tm-media-body tm-bg-gray">
-                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Asia</h4>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="media tm-media tm-recommended-item">
-                                        <img src="img/tn-img-03.jpg" alt="Image">
-                                        <div class="media-body tm-media-body tm-bg-gray">
-                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Africa</h4>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="media tm-media tm-recommended-item">
-                                        <img src="img/tn-img-04.jpg" alt="Image">
-                                        <div class="media-body tm-media-body tm-bg-gray">
-                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">South America</h4>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           -->
-
-                           <!--
-            <div class="tm-bg-video">
-                <div class="overlay">
-                    <i class="fa fa-5x fa-play-circle tm-btn-play"></i>
-                    <i class="fa fa-5x fa-pause-circle tm-btn-pause"></i>
-                </div>
-                <video controls="" loop="" class="tmVideo">
-                    <source src="videos/video.mp4" type="video/mp4">
-                    <source src="videos/video.ogg" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>
-
-                <div class="tm-section tm-section-pad tm-bg-img" id="tm-section-5">
-                    <div class="container ie-h-align-center-fix">
-                        <div class="row tm-flex-align-center">
-                            <div class="col-xs-12 col-md-12 col-lg-3 col-xl-3 tm-media-title-container">
-                                <h2 class="text-uppercase tm-section-title-2">ASIA</h2>
-                                <h3 class="tm-color-primary tm-font-semibold tm-section-subtitle-2">Singapore</h3>
-                            </div>
-                            <div class="col-xs-12 col-md-12 col-lg-9 col-xl-9 mt-0 mt-sm-3">
-                                <div class="ml-auto tm-bg-white-shadow tm-pad tm-media-container">
-                                    <article class="media tm-margin-b-20 tm-media-1">
-                                        <img src="img/img-03.jpg" alt="Image">
-                                        <div class="media-body tm-media-body-1 tm-media-body-v-center">
-                                            <h3 class="tm-font-semibold tm-color-primary tm-article-title-3">Suspendisse vel est libero sem phasellus ac laoreet</h3>
-                                            <p>Integer libero purus, consectetur vitae posuere quis, maximus id diam. Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus finibus rhoncus justo, tempus eleifend neque dictum ac. Aenean metus leo, consectetur non.
-                                            <br><br>
-											Etiam aliquam arcu at mauris consectetur scelerisque. Integer elementum justo in orci facilisis ultricies. Pellentesque at velit ante. Duis scelerisque metus vel felis porttitor gravida.</p>
-                                        </div>
-                                    </article>
-                                    <article class="media tm-margin-b-20 tm-media-1">
-                                        <img src="img/img-04.jpg" alt="Image">
-                                        <div class="media-body tm-media-body-1 tm-media-body-v-center">
-                                            <h3 class="tm-font-semibold tm-article-title-3">Suspendisse vel est libero sem phasellus ac laoreet</h3>
-                                            <p>Duis accumsan sagittis tortor in ultrices. Praesent tortor ante, fringilla ac nibh porttitor, fermentum commodo nulla.</p>
-                                            <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
-                                        </div>
-                                    </article>
-                                    <article class="media tm-margin-b-20 tm-media-1">
-                                        <img src="img/img-05.jpg" alt="Image">
-                                        <div class="media-body tm-media-body-1 tm-media-body-v-center">
-                                            <h3 class="tm-font-semibold tm-article-title-3">Faucibus dolor ligula nisl metus auctor aliquet</h3>
-                                            <p>Nunc in felis aliquet metus luctus iaculis vel et nisi. Nulla venenatis nisl orci, laoreet ultricies massa tristique id.</p>
-                                            <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               -->
-            </div>
-
-            <div class="tm-section tm-section-pad tm-bg-img tm-position-relative" id="tm-section-6">
-                <div class="container ie-h-align-center-fix">
-                    <div class="row">
-                        <span class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-left">
-
-                            <h3 class="tm-color-primary tm-article-title-1"><i class="fa fa-comments-o tm-color-primary tm-margin-b-20"></i> Contact Us</h3>
-                            <p class="about">We would be happy to hear from you. Feel free to call, send us an email, Tweet us or simply complete the enquiry form. Also feel free to just drop in and say Hi!!
-                            Come say Hi!</p>
-                            <p class="about tm-font-semibold tm-font-italic">“We are constantly looking for opportunities to work with other people” </p>
-
-                            <p class="about tm-color-primary tm-font-semibold">
-                                                        Reach us through:</p>
-                            <p class="about">
-                                                        Mobile: (255) 717 153 080<br>
-                                                        Mobile2: (255) 684 788 499<br>
-                                                        Email: hello@mjasiri.or.tz<br>
-                                                        <i class="fa fa-twitter-square tm-color-primary"></i> <a href="http://twitter.com/mjasiritz" targer="_blank">@mjasiritz</a><br>
-                                                       <i class="fa fa-instagram tm-color-primary"></i> <a href="http://instagram.com/mjasiritz" target="_blank">@mjasiritz</a></p>
-                        </span>
-
-
-
-
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-5 mt-3 mt-md-0">
-                            <div class="tm-bg-white tm-p-4">
-                                <form action="index.html" method="post" class="contact-form">
-                                    <div class="form-group">
-                                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Subject"  required/>
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" required></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary tm-btn-primary">Send Message Now</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <footer class="tm-bg-dark-blue">
-                <div class="container">
-
-                    <div class="row">
-                        <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
-                         &copy; <span class="tm-color-primary" >Telling Africa's Stories </span>&nbsp &nbsp<i class="fa fa-bullseye"></i>   <a href="http://studio19.co.tz" class="tm-color-primary tm-font-normal" target="_parent">Studio 19</a></p>
-                    </div>
-                </div>
-            </footer>
-        </div>
-
-        <!-- load JS files -->
-        <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
-        <script src="js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->
-        <script src="js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
-        <script src="js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
-        <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
-        <script src="slick/slick.min.js"></script>
-        <!-- Adding Countdown Timer -->
-        <script type="text/javascript" src="js/kinetic.js"></script>
-        <script type="text/javascript" src="js/countdown.js"></script>
-
-                          <!-- http://kenwheeler.github.io/slick/ -->
-        <script>
-
-
-
-            /* Google map
-            ------------------------------------------------*/
-            var map = '';
-            var center;
-
-            function initialize() {
-                var mapOptions = {
-                    zoom: 16,
-                    center: new google.maps.LatLng(13.7567928,100.5653741),
-                    scrollwheel: false
-                };
-
-                map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
-
-                google.maps.event.addDomListener(map, 'idle', function() {
-                  calculateCenter();
-              });
-
-                google.maps.event.addDomListener(window, 'resize', function() {
-                  map.setCenter(center);
-              });
-            }
-
-            function calculateCenter() {
-                center = map.getCenter();
-            }
-
-            function loadGoogleMap(){
-                var script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.933250694504!2d39.241253614295026!3d-6.777978768167249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4c0b41229c45%3A0x9d1921f6fc3b9df2!2sStudio+19+Ltd!5e0!3m2!1sen!2stz!4v1519590640567' + 'callback=initialize';
-                document.body.appendChild(script);
-            }
-
-            function setCarousel() {
-
-                if ($('.tm-article-carousel').hasClass('slick-initialized')) {
-                    $('.tm-article-carousel').slick('destroy');
-                }
-
-                if($(window).width() < 438){
-                    // Slick carousel
-                    $('.tm-article-carousel').slick({
-                        infinite: false,
-                        dots: true,
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    });
-                }
-                else {
-                 $('.tm-article-carousel').slick({
-                        infinite: false,
-                        dots: true,
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    });
-                }
-            }
-
-            function setPageNav(){
-                if($(window).width() > 991) {
-                    $('#tm-top-bar').singlePageNav({
-                        currentClass:'active',
-                        offset: 79
-                    });
-                }
-                else {
-                    $('#tm-top-bar').singlePageNav({
-                        currentClass:'active',
-                        offset: 65
-                    });
-                }
-            }
-
-            function togglePlayPause() {
-                vid = $('.tmVideo').get(0);
-
-                if(vid.paused) {
-                    vid.play();
-                    $('.tm-btn-play').hide();
-                    $('.tm-btn-pause').show();
-                }
-                else {
-                    vid.pause();
-                    $('.tm-btn-play').show();
-                    $('.tm-btn-pause').hide();
-                }
-            }
-
-            $(document).ready(function(){
-
-                $(window).on("scroll", function() {
-                    if($(window).scrollTop() > 100) {
-                        $(".tm-top-bar").addClass("active");
-                    } else {
-                        //remove the background property so it comes transparent again (defined in your css)
-                       $(".tm-top-bar").removeClass("active");
-                    }
-                });
-
-                // Google Map
-                loadGoogleMap();
-
-                // Date Picker
-
-                //const pickerCheckIn = datepicker('#inputCheckIn');
-                //const pickerCheckOut = datepicker('#inputCheckOut');
-
-                // Slick carousel
-                setCarousel();
-                setPageNav();
-
-                $(window).resize(function() {
-                  setCarousel();
-                  setPageNav();
-                });
-
-                // Close navbar after clicked
-                $('.nav-link').click(function(){
-                    $('#mainNav').removeClass('show');
-                });
-
-                // Control video
-                $('.tm-btn-play').click(function() {
-                    togglePlayPause();
-                });
-
-                $('.tm-btn-pause').click(function() {
-                    togglePlayPause();
-                });
-
-                // Update the current year in copyright
-                $('.tm-current-year').text(new Date().getFullYear());
-            });
-
-
-            $('document').ready(function() {
-                'use strict';
-
-             $('.countdown').final_countdown({
-                    'start':0,
-                    'end': 8294400,
-                    'now': 4752000
-                });
-            });
-
-        </script>
-
-</body>
-</html>
+<body>
+ <div class="tm-main-content" id="top">
+  <div class="tm-top-bar-bg"></div>
+  <div class="tm-top-bar" id="tm-top-bar">
+   <!-- Top Navbar -->
+   <div class="container">
+    <div class="row">
+
+     <nav class="navbar navbar-expand-lg narbar-light">
+      <a class="navbar-brand mr-auto" href="#">
+       <img src="img/mjasirixs.png" alt="Site logo">
+      </a>
+      <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+       <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+         <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+         <a class="nav-link" href="#tm-section-2">About Us</a>
+        </li>
+
+        <li class="nav-item">
+         <a class="nav-link" href="#tm-section-4">Stories</a>
+        </li>
+
+        <li class="nav-item">
+         <a class="nav-link" href="#tm-section-6">Contact Us</a>
+        </li>
+
+       </ul>
+      </div>
+     </nav>
+    </div>
+   </div>
+  </div>
+  <div class="tm-section tm-bg-img" id="tm-section-1">
+   <div class="tm-bg-white ie-container-width-fix-2">
+    <div class="maincontainer container ie-h-align-center-fix">
+
+     <div class="row theme-container">
+      <div class="col text-center">
+       <h3>Our next event</h3>
+       <h1 class="tm-section-title">Theme: Dear Future Generation</h1>
+       <h2 class="tm-section-subtitle top-subtitle">Celebrating Women | Environment | Defying Barries </h2>
+       <p class="tm-color-white tm-section-subtitle">Date: 7th April 2018</p>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-xs-12 ml-auto mr-auto ie-container-width-fix">
+
+       <div class="form-row tm-search-form-row">
+
+        <div class=" countdown countdown-container container">
+         <div class="clock row">
+          <div class="clock-item clock-days countdown-time-value col-xs-3 col-sm-3 col-md-3">
+           <div class="wrap">
+            <div class="inner">
+             <div id="canvas-days" class="clock-canvas"></div>
+
+             <div class="text">
+              <p class="val">0</p>
+              <p class="type-days type-time">DAYS</p>
+             </div><!-- /.text -->
+            </div><!-- /.inner -->
+           </div><!-- /.wrap -->
+          </div><!-- /.clock-item -->
+
+          <div class="clock-item clock-hours countdown-time-value col-xs-3 col-sm-3 col-md-3">
+           <div class="wrap">
+            <div class="inner">
+             <div id="canvas-hours" class="clock-canvas"></div>
+
+             <div class="text">
+              <p class="val">0</p>
+              <p class="type-hours type-time">HOURS</p>
+             </div><!-- /.text -->
+            </div><!-- /.inner -->
+           </div><!-- /.wrap -->
+          </div><!-- /.clock-item -->
+
+          <div class="clock-item clock-minutes countdown-time-value col-xs-3 col-sm-3 col-md-3">
+           <div class="wrap">
+            <div class="inner">
+             <div id="canvas-minutes" class="clock-canvas"></div>
+
+             <div class="text">
+              <p class="val">0</p>
+              <p class="type-minutes type-time">MINUTES</p>
+             </div><!-- /.text -->
+            </div><!-- /.inner -->
+           </div><!-- /.wrap -->
+          </div><!-- /.clock-item -->
+
+          <div class="clock-item clock-seconds countdown-time-value col-xs-3 col-sm-3 col-md-3">
+           <div class="wrap">
+            <div class="inner">
+             <div id="canvas-seconds" class="clock-canvas"></div>
+
+             <div class="text">
+              <p class="val">0</p>
+              <p class="type-seconds type-time">SECONDS</p>
+             </div><!-- /.text -->
+            </div><!-- /.inner -->
+           </div><!-- /.wrap -->
+          </div><!-- /.clock-item -->
+         </div><!-- /.clock -->
+        </div><!-- /.countdown-wrapper -->
+
+       </div>
+
+      </div>
+     </div>
+
+
+    </div>
+   </div>
+  </div>
+
+  <div class="tm-section-2" id="tm-section-2">
+   <div class="container">
+    <div class="row">
+     <div class="col text-center">
+      <h2 class="tm-section-title">Telling Africa's Stories</h2>
+      <p class="tm-color-white tm-section-subtitle">Want to Attend the event? Subscribe below</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOCHxrTxz3OVLUW5i4LfTmz4NGmt-3Hhy9mzHP2d4lpSmNxA/viewform" target="_blank" class="tm-color-white tm-btn-white-bordered">Join Us</a>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <div class="tm-section tm-position-relative">
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="tm-section-down-arrow">
+    <polygon fill="#E47735" points="0,0  100,0  50,60"></polygon>
+   </svg>
+   <div class="container tm-pb-4">
+    <div class="row ">
+     <article class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
+      <h3 class="tm-color-primary tm-article-title-1">About Mjasiri <i class="fa fa-cog tm-color-primary tm-margin-b-20"></i></h3>
+      <p class="darker">Mjasiri is a platform for sharing inspiring local stories. </p>
+      <p class="darker">Our mission is to preserve and share Africa’s stories in order to understand what drives, defines and build our cultures and experiences. We identify and share stories that conveys Its values and character as we are finding our place and contribution to the world and the future in this ever connected world. We tell stories that Inspire, educate, entertain and promote reflection.</p>
+
+     </article>
+
+     <article class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-left">
+
+      <h3 class="tm-color-primary tm-article-title-1"><i class="fa fa-cogs tm-color-primary tm-margin-b-20"></i> Why we do this?</h3>
+      <p class="darker">We do this to remind one another of our shared humanity,and to build the understanding that each is unique in some ways and our diversity contributes to the overall beauty and wellbeing of our human garden and that we all have a contribution and a role to play.</p>
+      <p class="darker"> At the same time, we are creating an invaluable archive for future generations.</p>
+
+      <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Join Us Now.</a>
+     </article>
+    </div>
+   </div>
+  </div>
+
+  <div class="tm-section tm-section-pad tm-bg-gray" id="tm-section-4">
+   <div class="container">
+    <div class="row">
+     <!--
+     <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+     <div class="tm-article-carousel">
+     <article class="tm-bg-white mr-2 tm-carousel-item">
+     <img src="img/img-01.jpg" alt="Image" class="img-fluid">
+     <div class="tm-article-pad">
+     <header><h3 class="text-uppercase tm-article-title-2">Nunc in felis aliquet metus luctus iaculis</h3></header>
+     <p>Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla. Nullam sollicitudin at augue venenatis eleifend. Nulla ligula ligula, egestas sit amet viverra id, iaculis sit amet ligula.</p>
+     <a href="#" class="text-uppercase btn-primary tm-btn-primary">Get More Info.</a>
+    </div>
+   </article>
+   <article class="tm-bg-white mr-2 tm-carousel-item">
+   <img src="img/img-02.jpg" alt="Image" class="img-fluid">
+   <div class="tm-article-pad">
+   <header><h3 class="text-uppercase tm-article-title-2">Sed cursus dictum nunc quis molestie</h3></header>
+   <p>Pellentesque quis dui sit amet purus scelerisque eleifend sed ut eros. Morbi viverra blandit massa in varius. Sed nec ex eu ex tincidunt iaculis. Curabitur eget turpis gravida.</p>
+   <a href="#" class="text-uppercase btn-primary tm-btn-primary">View Detail</a>
+  </div>
+ </article>
+ <article class="tm-bg-white mr-2 tm-carousel-item">
+ <img src="img/img-01.jpg" alt="Image" class="img-fluid">
+ <div class="tm-article-pad">
+ <header><h3 class="text-uppercase tm-article-title-2">Eget diam pellentesque interdum ut porta</h3></header>
+ <p>Aenean finibus tempor nulla, et maximus nibh dapibus ac. Duis consequat sed sapien venenatis consequat. Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla.</p>
+ <a href="#" class="text-uppercase btn-primary tm-btn-primary">More Info.</a>
+</div>
+</article>
+<article class="tm-bg-white mr-2 tm-carousel-item">
+<img src="img/img-02.jpg" alt="Image" class="img-fluid">
+<div class="tm-article-pad">
+<header><h3 class="text-uppercase tm-article-title-2">Lorem ipsum dolor sit amet, consectetur</h3></header>
+<p>Suspendisse molestie sed dui eget faucibus. Duis accumsan sagittis tortor in ultrices. Praesent tortor ante, fringilla ac nibh porttitor, fermentum commodo nulla.</p>
+<a href="#" class="text-uppercase btn-primary tm-btn-primary">Detail Info.</a>
+</div>
+</article>
+<article class="tm-bg-white mr-2 tm-carousel-item">
+<img src="img/img-01.jpg" alt="Image" class="img-fluid">
+<div class="tm-article-pad">
+<header><h3 class="text-uppercase tm-article-title-2">Orci varius natoque penatibus et</h3></header>
+<p>Pellentesque quis dui sit amet purus scelerisque eleifend sed ut eros. Morbi viverra blandit massa in varius. Sed nec ex eu ex tincidunt iaculis. Curabitur eget turpis gravida.</p>
+<a href="#" class="text-uppercase btn-primary tm-btn-primary">Read More</a>
+</div>
+</article>
+<article class="tm-bg-white tm-carousel-item">
+<img src="img/img-02.jpg" alt="Image" class="img-fluid">
+<div class="tm-article-pad">
+<header><h3 class="text-uppercase tm-article-title-2">Nullam sollicitudin at augue venenatis eleifend</h3></header>
+<p>Aenean finibus tempor nulla, et maximus nibh dapibus ac. Duis consequat sed sapien venenatis consequat. Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla.</p>
+<a href="#" class="text-uppercase btn-primary tm-btn-primary">More Details</a>
+</div>
+</article>
+</div>
+</div>
+-->
+
+<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 tm-recommended-container">
+ <div class="row">
+
+ <div class="tm-bg-white col-md-6 col-lg-4">
+  <div class="tm-bg-primary tm-sidebar-pad">
+   <a href="https://docs.google.com/forms/d/e/1FAIpQLSexUHgrMwaM-neh_3WBuIaB_XtbCdsGt6wnFpIa_EkyiqKdSw/viewform" target="_blank">
+    <h3 class="tm-color-white tm-sidebar-title">Recommended A Story</h3>
+    <p class="tm-color-white tm-margin-b-0 tm-font-light">We are open to receive stories all year round</p>
+   </a>
+  </div>
+  <div class="tm-sidebar-pad-2">
+   <p class="darker">If you know someone who belongs on our platform, or if you belong there yourself, we want to hear from you! Please use our recommendation form, and tell us why this story belongs to the Mjasiri platform. </p>
+   <p class="darker">We accept nominations all the time.The event is only one of the means  through which we share these stories, we are working on more ways of dissemination. Our team will carefully research and determine which platform and what works well in telling those particular stories</p>
+  </div>
+ </div>
+
+ <div class=" tm-bg-white col-md-6 col-lg-8 tm-sidebar-item-title">
+  <!--
+<div class="col-lg-3 col-md-4 col-sm-4">
+ <img class="storyimage" src="https://instagram.fdar3-1.fna.fbcdn.net/vp/63ce8dac212a5db470de3a346c3e7211/5B469F24/t51.2885-15/e35/27581829_190748918187127_2961820549812060160_n.jpg" alt="Image">
+</div>
+<div class="col-lg-3 col-md-4 col-sm-4">
+ <img class="storyimage" src="https://instagram.fdar3-1.fna.fbcdn.net/vp/63ce8dac212a5db470de3a346c3e7211/5B469F24/t51.2885-15/e35/27581829_190748918187127_2961820549812060160_n.jpg" alt="Image">
+</div>
+<div class="col-lg-3 col-md-4 col-sm-4">
+ <img class="storyimage" src="https://instagram.fdar3-1.fna.fbcdn.net/vp/63ce8dac212a5db470de3a346c3e7211/5B469F24/t51.2885-15/e35/27581829_190748918187127_2961820549812060160_n.jpg" alt="Image">
+</div>
+<div class="col-lg-3 col-md-4 col-sm-4">
+ <img class="storyimage" src="https://instagram.fdar3-1.fna.fbcdn.net/vp/63ce8dac212a5db470de3a346c3e7211/5B469F24/t51.2885-15/e35/27581829_190748918187127_2961820549812060160_n.jpg" alt="Image">
+</div>
+<div class="col-lg-3 col-md-4 col-sm-4">
+ <img class="storyimage" src="https://instagram.fdar3-1.fna.fbcdn.net/vp/63ce8dac212a5db470de3a346c3e7211/5B469F24/t51.2885-15/e35/27581829_190748918187127_2961820549812060160_n.jpg" alt="Image">
+</div>
+<div class="col-lg-3 col-md-4 col-sm-4">
+ <img class="storyimage" src="https://instagram.fdar3-1.fna.fbcdn.net/vp/63ce8dac212a5db470de3a346c3e7211/5B469F24/t51.2885-15/e35/27581829_190748918187127_2961820549812060160_n.jpg" alt="Image">
+</div>
+-->
+
+ <img class="storyimage " src="img/story.jpg" alt="Image">
+ <img class="storyimage " src="img/story.jpg" alt="Image">
+ <img class="storyimage " src="img/story.jpg" alt="Image">
+ <img class="storyimage " src="img/story.jpg" alt="Image">
+ <img class="storyimage " src="img/story.jpg" alt="Image">
+ <img class="storyimage " src="img/story.jpg" alt="Image">
+ <img class="storyimage " src="img/story.jpg" alt="Image">
+ <img class="storyimage " src="img/story.jpg" alt="Image">
+ <img class="storyimage " src="img/story.jpg" alt="Image">
+ <img class="storyimage " src="img/story.jpg" alt="Image">
+ <img class="storyimage " src="img/story.jpg" alt="Image">
+ <img class="storyimage " src="img/story.jpg" alt="Image">
+</div>
+
+</div>
+
+<!--
+<div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-recommended-container">
+<div class="tm-bg-white">
+<div class="tm-bg-primary tm-sidebar-pad">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSexUHgrMwaM-neh_3WBuIaB_XtbCdsGt6wnFpIa_EkyiqKdSw/viewform" target="_blank">
+<h3 class="tm-color-white tm-sidebar-title">Recommended A Story</h3>
+<p class="tm-color-white tm-margin-b-0 tm-font-light">We are open to receive stories all year round</p>
+</a>
+</div>
+<div class="tm-sidebar-pad-2">
+<p class="darker">If you know someone who belongs on our platform, or if you belong there yourself, we want to hear from you! Please use our recommendation form, and tell us why this story belongs to the Mjasiri platform. </p>
+<p class="darker">We accept nominations all the time.The event is only one of the means  through which we share these stories, we are working on more ways of dissemination. Our team will carefully research and determine which platform and what works well in telling those particular stories</p>
+
+
+<a href="#" class="media tm-media tm-recommended-item">
+<img src="img/tn-img-01.jpg" alt="Image">
+<div class="media-body tm-media-body tm-bg-gray">
+<h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Europe</h4>
+</div>
+</a>
+<a href="#" class="media tm-media tm-recommended-item">
+<img src="img/tn-img-02.jpg" alt="Image">
+<div class="media-body tm-media-body tm-bg-gray">
+<h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Asia</h4>
+</div>
+</a>
+<a href="#" class="media tm-media tm-recommended-item">
+<img src="img/tn-img-03.jpg" alt="Image">
+<div class="media-body tm-media-body tm-bg-gray">
+<h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Africa</h4>
+</div>
+</a>
+<a href="#" class="media tm-media tm-recommended-item">
+<img src="img/tn-img-04.jpg" alt="Image">
+<div class="media-body tm-media-body tm-bg-gray">
+</div>
+</a>
+
+-->
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!--
+<div class="tm-bg-video">
+<div class="overlay">
+<i class="fa fa-5x fa-play-circle tm-btn-play"></i>
+<i class="fa fa-5x fa-pause-circle tm-btn-pause"></i>
+</div>
+<video controls="" loop="" class="tmVideo">
+<source src="videos/video.mp4" type="video/mp4">
+<source src="videos/video.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+<div class="tm-section tm-section-pad tm-bg-img" id="tm-section-5">
+<div class="container ie-h-align-center-fix">
+<div class="row tm-flex-align-center">
+<div class="col-xs-12 col-md-12 col-lg-3 col-xl-3 tm-media-title-container">
+<h2 class="text-uppercase tm-section-title-2">ASIA</h2>
+<h3 class="tm-color-primary tm-font-semibold tm-section-subtitle-2">Singapore</h3>
+</div>
+<div class="col-xs-12 col-md-12 col-lg-9 col-xl-9 mt-0 mt-sm-3">
+<div class="ml-auto tm-bg-white-shadow tm-pad tm-media-container">
+<article class="media tm-margin-b-20 tm-media-1">
+<img src="img/img-03.jpg" alt="Image">
+<div class="media-body tm-media-body-1 tm-media-body-v-center">
+<h3 class="tm-font-semibold tm-color-primary tm-article-title-3">Suspendisse vel est libero sem phasellus ac laoreet</h3>
+<p>Integer libero purus, consectetur vitae posuere quis, maximus id diam. Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus finibus rhoncus justo, tempus eleifend neque dictum ac. Aenean metus leo, consectetur non.
+<br><br>
+Etiam aliquam arcu at mauris consectetur scelerisque. Integer elementum justo in orci facilisis ultricies. Pellentesque at velit ante. Duis scelerisque metus vel felis porttitor gravida.</p>
+</div>
+</article>
+<article class="media tm-margin-b-20 tm-media-1">
+<img src="img/img-04.jpg" alt="Image">
+<div class="media-body tm-media-body-1 tm-media-body-v-center">
+<h3 class="tm-font-semibold tm-article-title-3">Suspendisse vel est libero sem phasellus ac laoreet</h3>
+<p>Duis accumsan sagittis tortor in ultrices. Praesent tortor ante, fringilla ac nibh porttitor, fermentum commodo nulla.</p>
+<a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+</div>
+</article>
+<article class="media tm-margin-b-20 tm-media-1">
+<img src="img/img-05.jpg" alt="Image">
+<div class="media-body tm-media-body-1 tm-media-body-v-center">
+<h3 class="tm-font-semibold tm-article-title-3">Faucibus dolor ligula nisl metus auctor aliquet</h3>
+<p>Nunc in felis aliquet metus luctus iaculis vel et nisi. Nulla venenatis nisl orci, laoreet ultricies massa tristique id.</p>
+<a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+-->
+</div>
+
+<div class="tm-section tm-section-pad tm-bg-img tm-position-relative" id="tm-section-6">
+ <div class="container ie-h-align-center-fix">
+  <div class="row">
+   <span class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-left">
+
+    <h3 class="tm-color-primary tm-article-title-1"><i class="fa fa-comments-o tm-color-primary tm-margin-b-20"></i> Contact Us</h3>
+    <p class="lighter">We would be happy to hear from you. Feel free to call, send us an email, Tweet us or simply complete the enquiry form. Also feel free to just drop in and say Hi!!
+     Come say Hi!</p>
+     <p class="lighter tm-font-semibold tm-font-italic">“We are constantly looking for opportunities to work with other people” </p>
+
+     <p class="lighter tm-color-primary tm-font-semibold">
+      Reach us through:</p>
+      <p class="lighter">
+       Mobile: (255) 717 153 080<br>
+       Mobile2: (255) 684 788 499<br>
+       Email: hello@mjasiri.or.tz<br>
+       <i class="fa fa-twitter-square tm-color-primary"></i> <a href="http://twitter.com/mjasiritz" targer="_blank">@mjasiritz</a><br>
+       <i class="fa fa-instagram tm-color-primary"></i> <a href="http://instagram.com/mjasiritz" target="_blank">@mjasiritz</a></p>
+      </span>
+
+
+
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-5 mt-3 mt-md-0">
+       <div class="tm-bg-white tm-p-4">
+        <form action="index.html" method="post" class="contact-form">
+         <div class="form-group">
+          <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
+         </div>
+         <div class="form-group">
+          <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+         </div>
+         <div class="form-group">
+          <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Subject"  required/>
+         </div>
+         <div class="form-group">
+          <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" required></textarea>
+         </div>
+         <button type="submit" class="btn btn-primary tm-btn-primary">Send Message Now</button>
+        </form>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+
+   <footer class="tm-bg-dark-blue">
+    <div class="container">
+
+     <div class="row">
+      <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
+       &copy; <span class="tm-color-primary" >Telling Africa's Stories </span>&nbsp &nbsp<i class="fa fa-bullseye"></i>   <a href="http://studio19.co.tz" class="tm-color-primary tm-font-normal" target="_parent">Studio 19</a></p>
+      </div>
+     </div>
+    </footer>
+   </div>
+
+   <!-- load JS files -->
+   <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+   <script src="js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->
+   <script src="js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
+   <script src="js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
+   <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+   <script src="slick/slick.min.js"></script>
+   <!-- Adding Countdown Timer -->
+   <script type="text/javascript" src="js/kinetic.js"></script>
+   <script type="text/javascript" src="js/countdown.js"></script>
+
+   <!-- http://kenwheeler.github.io/slick/ -->
+   <script>
+
+
+
+   /* Google map
+   ------------------------------------------------*/
+   var map = '';
+   var center;
+
+   function initialize() {
+    var mapOptions = {
+     zoom: 16,
+     center: new google.maps.LatLng(13.7567928,100.5653741),
+     scrollwheel: false
+    };
+
+    map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
+
+    google.maps.event.addDomListener(map, 'idle', function() {
+     calculateCenter();
+    });
+
+    google.maps.event.addDomListener(window, 'resize', function() {
+     map.setCenter(center);
+    });
+   }
+
+   function calculateCenter() {
+    center = map.getCenter();
+   }
+
+   function loadGoogleMap(){
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.933250694504!2d39.241253614295026!3d-6.777978768167249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4c0b41229c45%3A0x9d1921f6fc3b9df2!2sStudio+19+Ltd!5e0!3m2!1sen!2stz!4v1519590640567' + 'callback=initialize';
+    document.body.appendChild(script);
+   }
+
+   function setCarousel() {
+
+    if ($('.tm-article-carousel').hasClass('slick-initialized')) {
+     $('.tm-article-carousel').slick('destroy');
+    }
+
+    if($(window).width() < 438){
+     // Slick carousel
+     $('.tm-article-carousel').slick({
+      infinite: false,
+      dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1
+     });
+    }
+    else {
+     $('.tm-article-carousel').slick({
+      infinite: false,
+      dots: true,
+      slidesToShow: 2,
+      slidesToScroll: 1
+     });
+    }
+   }
+
+   function setPageNav(){
+    if($(window).width() > 991) {
+     $('#tm-top-bar').singlePageNav({
+      currentClass:'active',
+      offset: 79
+     });
+    }
+    else {
+     $('#tm-top-bar').singlePageNav({
+      currentClass:'active',
+      offset: 65
+     });
+    }
+   }
+
+   function togglePlayPause() {
+    vid = $('.tmVideo').get(0);
+
+    if(vid.paused) {
+     vid.play();
+     $('.tm-btn-play').hide();
+     $('.tm-btn-pause').show();
+    }
+    else {
+     vid.pause();
+     $('.tm-btn-play').show();
+     $('.tm-btn-pause').hide();
+    }
+   }
+
+   $(document).ready(function(){
+
+    $(window).on("scroll", function() {
+     if($(window).scrollTop() > 100) {
+      $(".tm-top-bar").addClass("active");
+     } else {
+      //remove the background property so it comes transparent again (defined in your css)
+      $(".tm-top-bar").removeClass("active");
+     }
+    });
+
+    // Google Map
+    loadGoogleMap();
+
+    // Date Picker
+
+    //const pickerCheckIn = datepicker('#inputCheckIn');
+    //const pickerCheckOut = datepicker('#inputCheckOut');
+
+    // Slick carousel
+    setCarousel();
+    setPageNav();
+
+    $(window).resize(function() {
+     setCarousel();
+     setPageNav();
+    });
+
+    // Close navbar after clicked
+    $('.nav-link').click(function(){
+     $('#mainNav').removeClass('show');
+    });
+
+    // Control video
+    $('.tm-btn-play').click(function() {
+     togglePlayPause();
+    });
+
+    $('.tm-btn-pause').click(function() {
+     togglePlayPause();
+    });
+
+    // Update the current year in copyright
+    $('.tm-current-year').text(new Date().getFullYear());
+   });
+
+
+   $('document').ready(function() {
+    'use strict';
+
+    $('.countdown').final_countdown({
+     'start':0,
+     'end': 8294400,
+     'now': 4752000
+    });
+   });
+
+   </script>
+
+  </body>
+  </html>
