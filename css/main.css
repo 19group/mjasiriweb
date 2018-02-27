@@ -599,3 +599,7 @@ p.lighter{
     margin-bottom: 10px;
     margin-top: 10px;
 }
+div.tm-sidebar-pad:hover{
+	background-color:#E46134;
+	font-size: 14px;
+}
