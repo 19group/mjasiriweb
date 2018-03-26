@@ -610,13 +610,25 @@ Etiam aliquam arcu at mauris consectetur scelerisque. Integer elementum justo in
    });
 
 
+
+
    $('document').ready(function() {
     'use strict';
+    var now = new Date(); // Current date now.
+    var eventdate = new Date(2018, 3, 7, 0, 0, 0, 0); // Event Date.
+    var yearstart = new Date(2018, 0, 1, 0, 0, 0, 0); // Start of the Year
+ //   var d = (b-a); // Difference in milliseconds.
+
+    var differencestart = parseInt((eventdate - yearstart)/1000);
+    var differencenow = parseInt((now - yearstart)/1000);
+    alert(differencestart);
+    alert(differencenow);
 
     $('.countdown').final_countdown({
      'start':0,
-     'end': 8294400,
-     'now': 4752000
+     'end': differencestart,
+     'now': differencenow
+
     });
    });
 
