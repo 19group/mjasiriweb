@@ -122,10 +122,17 @@ p {
 }
 
 #tm-section-1 {
-	background-image: url('../img/bg-img-1.jpg');
+	/*background-image: url('../img/bg-img-11.jpg');*/
 	height: 515px;
+	background:	linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ), url('../img/bg-img-11.jpg');
 }
 
+#tm-section-1::after{
+	opacity: 0.4;
+}
 #tm-section-5 { background-image: url('../img/bg-img-2.jpg'); }
 
 #tm-section-6 {
